@@ -4,6 +4,39 @@
   <p><strong>Gestão simples, organizada e inteligente para chamados internos</strong></p>
 </div>
 
+---
+
+## Equipe
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Nome</th>
+      <th align="left">RM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edmilson Gato Junior</td>
+      <td>RM377042</td>
+    </tr>
+    <tr>
+      <td>Elton Rodrigues de Melo Leite</td>
+      <td>RM377314</td>
+    </tr>
+    <tr>
+      <td>Raphael Flores da Costa</td>
+      <td>RM379021</td>
+    </tr>
+    <tr>
+      <td>Yuri de França Cordeiro</td>
+      <td>RM379108</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 ## Sobre o projeto
 
 O HelpDesk Lite é uma solução pensada para organizar e agilizar o atendimento de demandas internas em uma empresa. Ele centraliza solicitações de diferentes áreas, como TI, Facilities e RH, em um único ambiente para facilitar o acompanhamento, a triagem e a resolução.
@@ -94,17 +127,6 @@ Essa organização ajuda a manter o projeto em evolução com clareza e discipli
 
 - [Atividade 1/01_Arquitetura_HelpDesk_Lite v3.md](Atividade%201/01_Arquitetura_HelpDesk_Lite%20v3.md)
 - [Atividade 2/03_Prompt_Implementacao v3.md](Atividade%202/03_Prompt_Implementacao%20v3.md)
-
----
-
-## Equipe
-
-| Nome | RM |
-|---|---|
-| Edmilson Gato Junior | RM377042 |
-| Elton Rodrigues de Melo Leite | RM377314 |
-| Raphael Flores da Costa | RM379021 |
-| Yuri de França Cordeiro | RM379108 |
 
 ---
 
