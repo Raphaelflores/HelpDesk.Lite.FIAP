@@ -1,0 +1,115 @@
+# HelpDesk Lite
+
+<div align="center">
+  <p><strong>Gestão simples, organizada e inteligente para chamados internos</strong></p>
+</div>
+
+## Sobre o projeto
+
+O HelpDesk Lite é uma solução pensada para organizar e agilizar o atendimento de demandas internas em uma empresa. Ele centraliza solicitações de diferentes áreas, como TI, Facilities e RH, em um único ambiente para facilitar o acompanhamento, a triagem e a resolução.
+
+A ideia do projeto é simular um sistema real de suporte interno, com diferentes perfis de usuário, regras de negócio e fluxo claro de atendimento, desde a abertura do chamado até a sua conclusão.
+
+---
+
+## Ideia do sistema
+
+Imagine um ambiente em que todos os pedidos internos são registrados em um único lugar, sem perder controle por e-mail, planilha ou mensagens aleatórias. O HelpDesk Lite resolve isso ao permitir que:
+
+- usuários abram chamados facilmente;
+- atendentes assumam e respondam solicitações;
+- administradores acompanhem a operação geral;
+- a equipe tenha mais visibilidade sobre o andamento dos casos.
+
+Essa abordagem melhora a organização, reduz o retrabalho e torna o atendimento mais ágil e transparente.
+
+---
+
+## Fluxo principal
+
+O sistema foi pensado para funcionar com três papéis principais:
+
+### 1. Solicitante
+- abre chamados;
+- acompanha o status das demandas;
+- comenta quando necessário;
+- confirma a resolução.
+
+### 2. Atendente
+- visualiza chamados ativos;
+- assume o atendimento;
+- atualiza o status;
+- responde e resolve a solicitação.
+
+### 3. Administrador
+- gerencia usuários e categorias;
+- acompanha o panorama geral do suporte;
+- mantém o ambiente organizado e controlado.
+
+---
+
+## Objetivos
+
+- centralizar demandas internas em um único lugar;
+- facilitar o acompanhamento de cada chamado;
+- organizar o fluxo de atendimento por perfil;
+- manter maior controle sobre prioridades e responsabilidades;
+- oferecer uma visão geral do desempenho do suporte.
+
+---
+
+## Organização do repositório
+
+A estrutura atual do projeto está organizada da seguinte forma:
+
+```text
+HelpDesk.Lite.FIAP/
+├── README.md
+├── Atividade 1/
+│   └── 01_Arquitetura_HelpDesk_Lite v3.md
+├── Atividade 2/
+│   └── 03_Prompt_Implementacao v3.md
+├── backend/          # futura API e regras de negócio
+├── frontend/         # futura interface do sistema
+├── docs/             # documentação complementar
+├── .gitignore
+├── .ai/              # arquivos de contexto e padronização
+└── assets/           # recursos visuais e materiais do projeto
+```
+
+### Organização por momento
+
+- `Atividade 1/`: reúne a base de arquitetura e desenho do sistema;
+- `Atividade 2/`: contém o prompt de implementação e orientação para desenvolvimento;
+- `backend/`: será responsável pela lógica e processamento do sistema;
+- `frontend/`: será a camada de interação com o usuário;
+- `docs/`: guarda registros e documentação complementar;
+- `.ai/`: armazena regras e contexto do projeto.
+
+Essa organização ajuda a manter o projeto em evolução com clareza e disciplina.
+
+---
+
+## Documentação de apoio
+
+- [Atividade 1/01_Arquitetura_HelpDesk_Lite v3.md](Atividade%201/01_Arquitetura_HelpDesk_Lite%20v3.md)
+- [Atividade 2/03_Prompt_Implementacao v3.md](Atividade%202/03_Prompt_Implementacao%20v3.md)
+
+---
+
+## Equipe
+
+| Nome | RM |
+|---|---|
+| Edmilson Gato Junior | RM377042 |
+| Elton Rodrigues de Melo Leite | RM377314 |
+| Raphael Flores da Costa | RM379021 |
+| Yuri de França Cordeiro | RM379108 |
+
+---
+
+## Conclusão
+
+O HelpDesk Lite é uma proposta de sistema de suporte interno moderno, prática e funcional. O objetivo principal é simular um ambiente real de atendimento, com organização, rastreabilidade e clareza no fluxo de chamados.
+
+Além disso, o projeto também representa um trabalho de colaboração e arquitetura, unindo teoria e prática em uma solução pensada para resolver problemas reais de suporte dentro de uma empresa.
