@@ -1,7 +1,13 @@
 # HelpDesk Lite
 
 <div align="center">
-  <p><strong>Gestão simples, organizada e inteligente para chamados internos</strong></p>
+  <p>
+    <strong>Gestão simples, organizada e inteligente para chamados internos</strong>
+  </p>
+</div>
+
+<div align="center">
+  <code>helpdesk / support / workflow / operations</code>
 </div>
 
 ---
@@ -39,22 +45,22 @@
 
 ## Sobre o projeto
 
-O HelpDesk Lite é uma solução pensada para organizar e agilizar o atendimento de demandas internas em uma empresa. Ele centraliza solicitações de diferentes áreas, como TI, Facilities e RH, em um único ambiente para facilitar o acompanhamento, a triagem e a resolução.
+O HelpDesk Lite é uma solução pensada para organizar e otimizar o atendimento de demandas internas em uma empresa. Ele centraliza solicitações de diferentes áreas, como TI, Facilities e RH, em um único ambiente para facilitar acompanhamento, triagem e resolução.
 
-A ideia do projeto é simular um sistema real de suporte interno, com diferentes perfis de usuário, regras de negócio e fluxo claro de atendimento, desde a abertura do chamado até a sua conclusão.
+A proposta do projeto simula um ambiente real de suporte interno, com diferentes perfis de acesso, regras de negócio e fluxo claro de atendimento, cobrindo toda a jornada desde a abertura do chamado até a sua conclusão.
 
 ---
 
 ## Ideia do sistema
 
-Imagine um ambiente em que todos os pedidos internos são registrados em um único lugar, sem perder controle por e-mail, planilha ou mensagens aleatórias. O HelpDesk Lite resolve isso ao permitir que:
+Imagine um ambiente em que todos os pedidos internos são registrados em um único lugar, sem perder controle por e-mail, planilha ou comunicação informal. O HelpDesk Lite resolve isso ao permitir que:
 
-- usuários abram chamados facilmente;
+- usuários abram chamados de forma simples e organizada;
 - atendentes assumam e respondam solicitações;
 - administradores acompanhem a operação geral;
 - a equipe tenha mais visibilidade sobre o andamento dos casos.
 
-Essa abordagem melhora a organização, reduz o retrabalho e torna o atendimento mais ágil e transparente.
+Essa abordagem melhora a organização, reduz retrabalho e acelera a resolução dos problemas.
 
 ---
 
@@ -112,9 +118,9 @@ HelpDesk.Lite.FIAP/
 
 ### Organização por momento
 
-- `Atividade 1/`: reúne a base de arquitetura e desenho do sistema;
-- `Atividade 2/`: contém o prompt de implementação e orientação para desenvolvimento;
-- `backend/`: será responsável pela lógica e processamento do sistema;
+- `Atividade 1/`: reúne a base da arquitetura e o desenho do sistema;
+- `Atividade 2/`: contém o prompt de implementação e as orientações para desenvolvimento;
+- `backend/`: será responsável pela lógica e pelo processamento do sistema;
 - `frontend/`: será a camada de interação com o usuário;
 - `docs/`: guarda registros e documentação complementar;
 - `.ai/`: armazena regras e contexto do projeto.
@@ -135,3 +141,7 @@ Essa organização ajuda a manter o projeto em evolução com clareza e discipli
 O HelpDesk Lite é uma proposta de sistema de suporte interno moderno, prática e funcional. O objetivo principal é simular um ambiente real de atendimento, com organização, rastreabilidade e clareza no fluxo de chamados.
 
 Além disso, o projeto também representa um trabalho de colaboração e arquitetura, unindo teoria e prática em uma solução pensada para resolver problemas reais de suporte dentro de uma empresa.
+
+---
+
+> “Todo o conteúdo deste projeto foi criado com apoio e colaboração de inteligência artificial, com revisão e adaptação humana para garantir clareza, organização e qualidade.”
