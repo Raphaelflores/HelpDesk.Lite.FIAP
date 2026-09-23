@@ -1,0 +1,45 @@
+// Estilos globais da aplicacao.
+
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartao-indicador {
+  min-width: 150px;
+}
+
+// Deixa a linha da tabela de chamados clicavel de forma evidente.
+.linha-clicavel {
+  cursor: pointer;
+}
+
+// ---------------------------------------------------------------------------------------
+// Tema claro / escuro
+//
+// Os componentes do Quasar se adaptam sozinhos quando o Dark esta ativo. O que fica por
+// nossa conta e o fundo da pagina e as classes utilitarias de cor, que sao fixas.
+// ---------------------------------------------------------------------------------------
+
+// O Quasar nao pinta o fundo da pagina: ele deixa transparente e conta com a cor padrao
+// do navegador. Isso quebra quando o sistema esta num tema e o app no outro -- a tela
+// clara ganha fundo preto. Declarar o fundo aqui tira essa dependencia.
+body.body--light {
+  background: #fff;
+}
+
+body.body--dark {
+  background: $dark-page;
+
+  // As classes utilitarias de cor sao fixas e nao acompanham o tema. Sobre o fundo claro
+  // `text-grey-7` e legivel; sobre o escuro fica com contraste baixo demais. Um ajuste
+  // global evita condicionar a cor em cada uma das dezenas de legendas.
+  .text-grey-7,
+  .text-grey-8 {
+    color: $grey-5 !important;
+  }
+
+  .text-grey-6 {
+    color: $grey-4 !important;
+  }
+}

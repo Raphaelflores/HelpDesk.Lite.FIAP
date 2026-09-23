@@ -1,0 +1,35 @@
+{
+  "name": "helpdesk-lite-frontend",
+  "version": "0.0.1",
+  "description": "SPA do HelpDesk Lite - chamados internos",
+  "productName": "HelpDesk Lite",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.12",
+    "axios": "^1.7.7",
+    "pinia": "^2.2.4",
+    "quasar": "^2.17.0",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.0.0",
+    "@quasar/vite-plugin": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^25.0.1",
+    "sass-embedded": "^1.80.4",
+    "vitest": "^2.1.4"
+  },
+  "engines": {
+    "node": "^20 || ^22 || ^24"
+  }
+}
