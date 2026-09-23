@@ -107,10 +107,13 @@ HelpDesk.Lite.FIAP/
 ├── Atividade 1/
 │   └── 01_Arquitetura_HelpDesk_Lite v3.md
 ├── Atividade 2/
+│   ├── 02_Prompt_Geracao_Contexto v3.md
 │   └── 03_Prompt_Implementacao v3.md
-├── backend/          # futura API e regras de negócio
-├── frontend/         # futura interface do sistema
+├── backend/          # API e regras de negócio (Java 21 + Spring Boot 3)
+├── frontend/         # interface do sistema (Vue 3 + Quasar 2)
 ├── docs/             # documentação complementar
+│   ├── ARQUITETURA.md
+│   └── MVP.md        # como rodar, demonstrar e operar o MVP
 ├── .gitignore
 ├── .ai/              # arquivos de contexto e padronização
 └── assets/           # recursos visuais e materiais do projeto
@@ -119,9 +122,9 @@ HelpDesk.Lite.FIAP/
 ### Organização por momento
 
 - `Atividade 1/`: reúne a base da arquitetura e o desenho do sistema;
-- `Atividade 2/`: contém o prompt de implementação e as orientações para desenvolvimento;
-- `backend/`: será responsável pela lógica e pelo processamento do sistema;
-- `frontend/`: será a camada de interação com o usuário;
+- `Atividade 2/`: contém os prompts de geração de contexto e de implementação;
+- `backend/`: responsável pela lógica e pelo processamento do sistema;
+- `frontend/`: a camada de interação com o usuário;
 - `docs/`: guarda registros e documentação complementar;
 - `.ai/`: armazena regras e contexto do projeto.
 
@@ -129,10 +132,34 @@ Essa organização ajuda a manter o projeto em evolução com clareza e discipli
 
 ---
 
+## Como rodar
+
+O MVP roda 100% local, sem Docker e sem banco para instalar. São dois terminais:
+
+```bash
+cd backend && ./mvnw spring-boot:run
+```
+
+```bash
+cd frontend && npm install && npx quasar dev
+```
+
+A interface abre em `http://localhost:9000` e a API em `http://localhost:8080`
+(Swagger em `/swagger-ui.html`). Na tela de login, escolha entre **Ana** (solicitante),
+**Bruno** (atendente) ou **Carla** (administradora) para ver o sistema por cada perfil.
+
+O passo a passo completo — pré-requisitos, usuários de teste, roteiro de demonstração,
+endpoints, testes e guia de operação — está em **[docs/MVP.md](docs/MVP.md)**.
+
+---
+
 ## Documentação de apoio
 
 - [Atividade 1/01_Arquitetura_HelpDesk_Lite v3.md](Atividade%201/01_Arquitetura_HelpDesk_Lite%20v3.md)
+- [Atividade 2/02_Prompt_Geracao_Contexto v3.md](Atividade%202/02_Prompt_Geracao_Contexto%20v3.md)
 - [Atividade 2/03_Prompt_Implementacao v3.md](Atividade%202/03_Prompt_Implementacao%20v3.md)
+- [docs/MVP.md](docs/MVP.md) — guia de execução, demonstração e operação do MVP
+- [.ai/](.ai/) — contexto do projeto: padrões, arquitetura (ADRs), stack e regras de negócio
 
 ---
 
