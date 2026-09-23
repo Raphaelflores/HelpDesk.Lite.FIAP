@@ -1,0 +1,137 @@
+spring:
+  application:
+    name: helpdesk-lite
+  profiles:
+    default: dev
+
+  datasource:
+    url: jdbc:h2:mem:helpdesk;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    defer-datasource-initialization: true   # o data.sql roda depois do schema do Hibernate
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: false
+
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+
+  mvc:
+    problemdetails:
+      enabled: false
+
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+    include-message: never
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,env,loggers
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: helpdesk-lite
+
+logging:
+  level:
+    root: INFO
+    br.com.helpdesk: DEBUG
+    org.hibernate.SQL: DEBUG
+    # Suba para TRACE se precisar ver os valores dos parametros (?) das queries.
+    # Fica em WARN por padrao porque polui o grep por X-Request-Id.
+    org.hibernate.orm.jdbc.bind: WARN
+
+---
+# ------------------------------------------------------------------------------------
+# Perfil prod: so o que pode ficar aberto atras da rede interna (secao 4.11 do documento)
+# ------------------------------------------------------------------------------------
+spring:
+  config:
+    activate:
+      on-profile: prod
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  sql:
+    init:
+      mode: never
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: never
+
+logging:
+  level:
+    br.com.helpdesk: INFO
+    org.hibernate.SQL: WARN
+    org.hibernate.orm.jdbc.bind: WARN
+
+---
+# ------------------------------------------------------------------------------------
+# Perfil test: H2 limpo, sem seed. Fixtures vem dos builders de support/ (nunca do data.sql)
+# ------------------------------------------------------------------------------------
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:helpdesk-test;DB_CLOSE_DELAY=-1
+  sql:
+    init:
+      mode: never
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    br.com.helpdesk: INFO
+    org.hibernate.SQL: WARN
+    org.hibernate.orm.jdbc.bind: WARN

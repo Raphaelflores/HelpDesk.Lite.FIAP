@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Pattern de log com requestId e usuarioId vindos do MDC.
+
+  requestId  e colocado pelo RequestIdFilter  (primeiro filtro da cadeia)
+  usuarioId  e colocado pelo UsuarioAtualFilter
+
+  Com isso, "achar tudo que aconteceu numa requisicao" e um grep pelo id que o cliente
+  recebeu no header X-Request-Id da resposta.
+-->
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="PADRAO_CONSOLE"
+              value="%d{HH:mm:ss.SSS} %highlight(%-5level) [%15.15thread] [req=%X{requestId:--} usr=%X{usuarioId:--}] %cyan(%-42.42logger{40}) : %msg%n"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${PADRAO_CONSOLE}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
