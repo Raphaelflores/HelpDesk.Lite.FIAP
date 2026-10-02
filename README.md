@@ -43,6 +43,20 @@
 
 ---
 
+## Demonstração
+
+Vídeo de apresentação do MVP em funcionamento — abertura do chamado, triagem pelo
+atendente, resolução, confirmação pelo solicitante e o dashboard de SLA.
+
+<div align="center">
+  <a href="https://youtu.be/JYeOy_7Hf04">
+    <img src="https://img.youtube.com/vi/JYeOy_7Hf04/maxresdefault.jpg" alt="Assistir à demonstração do HelpDesk Lite" width="640">
+  </a>
+  <p><a href="https://youtu.be/JYeOy_7Hf04"><strong>▶ Assistir no YouTube</strong> (3min36)</a></p>
+</div>
+
+---
+
 ## Sobre o projeto
 
 O HelpDesk Lite é uma solução pensada para organizar e otimizar o atendimento de demandas internas em uma empresa. Ele centraliza solicitações de diferentes áreas, como TI, Facilities e RH, em um único ambiente para facilitar acompanhamento, triagem e resolução.
@@ -160,6 +174,7 @@ endpoints, testes e guia de operação — está em **[docs/MVP.md](docs/MVP.md)
 - [Atividade 2/03_Prompt_Implementacao v3.md](Atividade%202/03_Prompt_Implementacao%20v3.md)
 - [docs/MVP.md](docs/MVP.md) — guia de execução, demonstração e operação do MVP
 - [.ai/](.ai/) — contexto do projeto: padrões, arquitetura (ADRs), stack e regras de negócio
+- [Vídeo de demonstração](https://youtu.be/JYeOy_7Hf04) — 3min36
 
 ---
 

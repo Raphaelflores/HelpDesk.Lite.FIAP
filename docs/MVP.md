@@ -12,6 +12,9 @@ memória e dados de demonstração carregados no boot.
 
 > Todos os comandos deste guia são executados **a partir da raiz do repositório**.
 
+**Prefere ver antes de rodar?** O MVP em funcionamento está no
+[vídeo de demonstração](https://youtu.be/JYeOy_7Hf04) (3min36).
+
 | | |
 |---|---|
 | **Backend** | Java 21 + Spring Boot 3.3 + Spring Data JPA + H2 — porta **8080** |
